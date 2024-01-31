@@ -17,3 +17,19 @@ function solution(babbling) {
   });
   return answer;
 }
+
+/**
+ * 이상적인 답
+ * 
+function solution(babbling) {
+  var answer = 0;
+  const regex = /^(aya|ye|woo|ma)+$/;
+
+  babbling.forEach(word => {
+    if (regex.test(word)) answer++;  
+  })
+
+  return answer;
+}
+* regex로 풀이하면 쉽게 풀 수 있었음
+ */
